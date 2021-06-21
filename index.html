@@ -1,0 +1,26 @@
+
+<body>
+    <div id="form">
+        <h3>
+        
+        <form>
+            <input id="name" name="name" placeholder="name" size="20"></br>
+            </br>
+            <input id="document_number" name="document_number" placeholder="document number" size="20">
+            <input id="jws" type="hidden">
+            </form>
+        </div>
+        <div>
+            <iframe frameborder=0 id="qr" width=300 height=300 src=https://acme.svipe.io/srcpic></iframe>
+        </div>
+        <input type="submit">
+        
+        </h3>
+    </div>
+</body>
+</html>
+
+<script>
+    window.document.domain = "localhost"; //if we remove this line then the below line will not work and throw a same origin policy exception.
+    window.parent.document.body.style.backgroundColor = "blue";
+</script>
